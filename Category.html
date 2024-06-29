@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Categorize - आभूषण</title>
+       <link rel="icon" type="image/x-icon" href="images/Logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4A3C31; /* Light gold background */
+    color:#FFF5CC;  /* Darker text color */
+}
+
+.tit  {
+  font-size:40px;
+  text-align:center;
+}
+
+.head {
+    background-color: #E1C16E; /* Darker gold background */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.head h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 80px;   
+}
+
+.gallery-item img {
+    width: auto;
+    height: 50%;
+    display: block; 
+    aspect-ratio:10/6;
+    border-radius: 10px;
+}
+
+
+.gallery-item{
+    height: 300px;
+    width: 250px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    border: 2px solid #E1C16E; /* Darker gold border */
+    border-radius: 10px;
+
+    text-align:center;
+    
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    position: absolute;
+    font-size:20px;
+}
+
+.front{
+    background: #4A3C31;
+    color:#E1C16E;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back{
+    background: #E1C16E;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.gallery-item:hover{
+    transform: rotateY(180deg);
+}
+
+.back button{
+   font-size:30px;
+   padding:0 30px;
+   margin: 40px 0;
+}
+
+
+   .popupButton {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+ 
+
+    </style>
+</head>
+<body>
+
+   <header>
+	  <div class="logo">
+		<img src="images\logo1.png" alt="Logo" height="100px" width="100px">
+	  </div>
+	  <nav>
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li onmouseover="show();" onmouseout="hide();">
+                    <a id="btn" href="#innerol">Categories</a>
+                    <ol class="innerol" id="innerlist">
+                        <li><a href="Category.html#ambada">खोपा</a></li>
+                        <li><a href="Category.html#ring">अंगठी</a></li>
+                        <li><a href="Category.html#bugadi">बुगडी</a></li>
+                        <li><a href="Category.html#jhumka">झुमका</a></li>
+                        <li><a href="Category.html#jodvi">जोडवी</a></li>
+                        <li><a href="Category.html#kambar-patta">कंबर पट्टा</a></li>
+                        <li><a href="Category.html#kolhapuri-saaj">कोल्हापुरी साज</a></li>
+                        <li><a href="Category.html#mangalsutra">मंगळसूत्र</a></li>
+                        <li><a href="Category.html#mohan-mal">मोहन माळ</a></li>
+                        <li><a href="Category.html#nath">नथ</a></li>
+                        <li><a href="Category.html#paayal">पायल</a></li>
+                        <li><a href="Category.html#patlya">पाटल्या</a></li>
+                        <li><a href="Category.html#tanmani">तन्मणी</a></li>
+                        <li><a href="Category.html#thushi">ठुशी</a></li>
+                        <li><a href="Category.html#tode">तोडे</a></li>
+                        <li><a href="Category.html#bajuband">बाजूबंद</a></li>
+                    </ol>
+                </li>
+
+                  <li><a href="Gellery.html">Gellery</a></li>
+                  <li><a href="#customer-review">Customer Reviwe</a></li>
+		  <li><a href="about.html">About Us</a></li>
+		  <li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	  </nav>
+	</header> 
+
+
+
+
+   <div class="head">
+      <h1>Our Products</h1>
+   </div>
+    <main>
+   
+
+             <div class="tit" id="ambada">     <h1>खोपा</h1>   </div>
+
+ <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Ambada.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>खोपा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Ambada1.webp" alt="Jewellery Image 1">  
+                     <h1>खोपा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Ambada2.jpeg" alt="Jewellery Image 1">  
+                     <h1>खोपा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Ambada3.jpeg" alt="Jewellery Image 1">  
+                     <h1>खोपा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Ambada4.webp" alt="Jewellery Image 1">  
+                     <h1>खोपा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Ambada5.avif" alt="Jewellery Image 1">  
+                     <h1>खोपा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Ambada6.jpg" alt="Jewellery Image 1">  
+                     <h1>खोपा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Ambada7.jpeg" alt="Jewellery Image 1">  
+                     <h1>खोपा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+             <div class="tit" id="ring">     <h1> अंगठी </h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Angathi.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>अंगठी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Angathi1.jpg" alt="Jewellery Image 1">  
+                     <h1>अंगठी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Angathi2.jpg" alt="Jewellery Image 1">  
+                     <h1>अंगठी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Angathi3.webp" alt="Jewellery Image 1">  
+                     <h1>अंगठी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Angathi4.jpeg" alt="Jewellery Image 1">  
+                     <h1>अंगठी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Angathi5.png" alt="Jewellery Image 1">  
+                     <h1>अंगठी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Angathi6.png" alt="Jewellery Image 1">  
+                     <h1>अंगठी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+             <div class="tit" id="bugadi">     <h1> बुगडी </h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Bugadi.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>बुगडी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Bugadi1.jpg" alt="Jewellery Image 1">  
+                     <h1>बुगडी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Bugadi2.jpg" alt="Jewellery Image 1">  
+                     <h1>बुगडी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Bugad3i.jpg" alt="Jewellery Image 1">  
+                     <h1>बुगडी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Bugadi4.webp" alt="Jewellery Image 1">  
+                     <h1>बुगडी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Bugadi5.webp" alt="Jewellery Image 1">  
+                     <h1>बुगडी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Bugadi6.webp" alt="Jewellery Image 1">  
+                     <h1>बुगडी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+             <div class="tit" id="jhumka">     <h1> झुमका</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jhumka.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>झुमका<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jhumka1.jpg" alt="Jewellery Image 1">  
+                     <h1>झुमका<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jhumka2.webp" alt="Jewellery Image 1">  
+                     <h1>झुमका<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jhumka3.jpeg" alt="Jewellery Image 1">  
+                     <h1>झुमका<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jhumka4.jpeg" alt="Jewellery Image 1">  
+                     <h1>झुमका<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jhumka5.jpeg" alt="Jewellery Image 1">  
+                     <h1>झुमका<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jhumka6.jpg" alt="Jewellery Image 1">  
+                     <h1>झुमका<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+
+             <div class="tit" class="jodvi">     <h1> जोडवी</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jodvi.webp" alt="Jewellery Image 1">
+                            
+                     <h1>जोडवी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jodvi1.jpg" alt="Jewellery Image 1">  
+                     <h1>जोडवी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jodvi2.jpeg" alt="Jewellery Image 1">  
+                     <h1>जोडवी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jodvi3.jpg" alt="Jewellery Image 1">  
+                     <h1>जोडवी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jodvi4.avif" alt="Jewellery Image 1">  
+                     <h1>जोडवी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jodvi5.webp" alt="Jewellery Image 1">  
+                     <h1>जोडवी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Jodvi6.webp" alt="Jewellery Image 1">  
+                     <h1>जोडवी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+
+
+             <div class="tit" id="kambar-patta">     <h1> कंबर पट्टा</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kambar Patta.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>कंबर पट्टा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kambar Patta1.webp" alt="Jewellery Image 1">  
+                     <h1>कंबर पट्टा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kambar Patta2.jpeg" alt="Jewellery Image 1">  
+                     <h1>कंबर पट्टा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kambar Patta3.avif" alt="Jewellery Image 1">  
+                     <h1>कंबर पट्टा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/KambarPatta4.jpg" alt="Jewellery Image 1">  
+                     <h1>कंबर पट्टा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kambar Patta5.avif" alt="Jewellery Image 1">  
+                     <h1>कंबर पट्टा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kambar Patta6.webp" alt="Jewellery Image 1">  
+                     <h1>कंबर पट्टा<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+
+
+             <div class="tit" id="kolhapuri-saaj">     <h1>कोल्हापुरी साज</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kolhapuri saaj.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>कोल्हापुरी साज<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kolhapuri saaj1.jpeg" alt="Jewellery Image 1">  
+                     <h1>कोल्हापुरी साज<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kolhapuri saaj2.jpeg" alt="Jewellery Image 1">  
+                     <h1>कोल्हापुरी साज<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kolhapuri saaj3.jpeg" alt="Jewellery Image 1">  
+                     <h1>कोल्हापुरी साज<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kolhapuri saaj4.jpeg" alt="Jewellery Image 1">  
+                     <h1>कोल्हापुरी साज<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kolhapuri saaj5.jpeg" alt="Jewellery Image 1">  
+                     <h1>कोल्हापुरी साज<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Kolhapuri saaj6.jpeg" alt="Jewellery Image 1">  
+                     <h1>कोल्हापुरी साज<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+             <div class="tit" id="mangalsutra">     <h1>मंगळसूत्र</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mangalsutra.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>मंगळसूत्र<h1/> 
+                     <h2>100</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mangalsutra1.jpg" alt="Jewellery Image 1">  
+                     <h1>मंगळसूत्र<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mangalsutra2.jpg" alt="Jewellery Image 1">  
+                     <h1>मंगळसूत्र<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mangalsutra3.jpg" alt="Jewellery Image 1">  
+                     <h1>मंगळसूत्र<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mangalsutra4.webp" alt="Jewellery Image 1">  
+                     <h1>मंगळसूत्र<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mangalsutra5.webp" alt="Jewellery Image 1">  
+                     <h1>मंगळसूत्र<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mangalsutra6.webp" alt="Jewellery Image 1">  
+                     <h1>मंगळसूत्र<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+
+             <div class="tit" id="mohan-mal">     <h1>मोहन माळ</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mohan Mala.webp" alt="Jewellery Image 1">
+                            
+                     <h1>मोहन माळ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mohan Mala1.png" alt="Jewellery Image 1">  
+                     <h1>मोहन माळ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mohan Mala2.jpg" alt="Jewellery Image 1">  
+                     <h1>मोहन माळ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mohan Mala3.jpg" alt="Jewellery Image 1">  
+                     <h1>मोहन माळ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mohan Mala4.jpeg" alt="Jewellery Image 1">  
+                     <h1>मोहन माळ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mohan Mala5.jpeg" alt="Jewellery Image 1">  
+                     <h1>मोहन माळ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Mohan Mala6.jpg" alt="Jewellery Image 1">  
+                     <h1>मोहन माळ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+             <div class="tit" id="nath">     <h1>नथ</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Nath.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>नथ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Nath1.webp" alt="Jewellery Image 1">  
+                     <h1>नथ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Nath2.webp" alt="Jewellery Image 1">  
+                     <h1>नथ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Nath3.webp" alt="Jewellery Image 1">  
+                     <h1>नथ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Nath4.webp" alt="Jewellery Image 1">  
+                     <h1>नथ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Nath5.jpg" alt="Jewellery Image 1">  
+                     <h1>नथ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Nath6.webp" alt="Jewellery Image 1">  
+                     <h1>नथ<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+             <div class="tit" class="paayal">     <h1>पायल</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Paayal.jpeg" alt="Jewellery Image 1">
+                            
+                     <h1>पायल<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Paayal1.jpg" alt="Jewellery Image 1">  
+                     <h1>पायल<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Paayal2.webp" alt="Jewellery Image 1">  
+                     <h1>पायल<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Paayal3.jpg" alt="Jewellery Image 1">  
+                     <h1>पायल<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Paayal4.webp" alt="Jewellery Image 1">  
+                     <h1>पायल<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Paayal5.jpeg" alt="Jewellery Image 1">  
+                     <h1>पायल<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Paayal6.jpeg" alt="Jewellery Image 1">  
+                     <h1>पायल<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+             <div class="tit" id="patlya">     <h1>पाटल्या</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Patlya.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>पाटल्या<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Patlya1.jpg" alt="Jewellery Image 1">  
+                     <h1>पाटल्या<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Patlya2.jpg" alt="Jewellery Image 1">  
+                     <h1>पाटल्या<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Patlya3.jpg" alt="Jewellery Image 1">  
+                     <h1>पाटल्या<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Patlya4.webp" alt="Jewellery Image 1">  
+                     <h1>पाटल्या<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Patlya5.jpg" alt="Jewellery Image 1">  
+                     <h1>पाटल्या<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Patlya6.jpg" alt="Jewellery Image 1">  
+                     <h1>पाटल्या<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+
+
+             <div class="tit" id="tanmani">     <h1>तन्मणी</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Tanmani.jpeg" alt="Jewellery Image 1">
+                            
+                     <h1>तन्मणी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Tanmani1.webp" alt="Jewellery Image 1">  
+                     <h1>तन्मणी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Tanmani2.jpeg" alt="Jewellery Image 1">  
+                     <h1>तन्मणी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Tanmani3.jpeg" alt="Jewellery Image 1">  
+                     <h1>तन्मणी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Tanmani4.webp" alt="Jewellery Image 1">  
+                     <h1>तन्मणी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Tanmani5.jpeg" alt="Jewellery Image 1">  
+                     <h1>तन्मणी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Tanmani6.jpeg" alt="Jewellery Image 1">  
+                     <h1>तन्मणी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+
+
+             <div class="tit" id="thushi">     <h1>ठुशी</h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/thushi.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>ठुशी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/thushi1.webp" alt="Jewellery Image 1">  
+                     <h1>ठुशी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/thushi2.jpeg" alt="Jewellery Image 1">  
+                     <h1>ठुशी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/thushi3.jpg" alt="Jewellery Image 1">  
+                     <h1>ठुशी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/thushi4.webp" alt="Jewellery Image 1">  
+                     <h1>ठुशी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/thushi5.webp" alt="Jewellery Image 1">  
+                     <h1>ठुशी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/thushi6.jpg" alt="Jewellery Image 1">  
+                     <h1>ठुशी<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button class="popupButton" data-url="contact.html">Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+
+
+
+             <div class="tit" id="tode">     <h1>तोडे </h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Toda.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>तोडे <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Toda1.webp" alt="Jewellery Image 1">  
+                     <h1>तोडे <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Toda2.webp" alt="Jewellery Image 1">  
+                     <h1>तोडे <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Toda3.webp" alt="Jewellery Image 1">  
+                     <h1>तोडे <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Toda4.webp" alt="Jewellery Image 1">  
+                     <h1>तोडे <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Toda5.jpg" alt="Jewellery Image 1">  
+                     <h1>तोडे <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Toda6.jpg" alt="Jewellery Image 1">  
+                     <h1>तोडे <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+
+             <div class="tit" id="bajuband">     <h1>बाजूबंद </h1>   </div>
+
+        <section class="Gallery">
+
+<div class="gallery">
+       <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Vaaki.jpg" alt="Jewellery Image 1">
+                            
+                     <h1>बाजूबंद <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button><br>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Vaaki1.jpeg" alt="Jewellery Image 1">  
+                     <h1>बाजूबंद<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Vaaki2.webp" alt="Jewellery Image 1">  
+                     <h1>बाजूबंद <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Vaaki3.jpg" alt="Jewellery Image 1">  
+                     <h1>बाजूबंद<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Vaaki4.jpg" alt="Jewellery Image 1">  
+                     <h1>बाजूबंद<h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Vaaki5.jpg" alt="Jewellery Image 1">  
+                     <h1>बाजूबंद <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+         <div class="gallery-item">
+                <div class="front">
+                     <img src="images/Vaaki6.webp" alt="Jewellery Image 1">  
+                     <h1>बाजूबंद <h1/> 
+                     <h2>100 &#8377;</h2>
+                </div>
+                <div class="back">
+                     <button>Order Now</button>
+                     <button>Add To Cart</button>
+                </div>
+         </div>
+   </div>
+         </section>
+
+
+
+
+
+    </main>
+   
+<!-- Footer -->
+<hr>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="images\logo1.png" alt="Logo" height="200px" width="200px">
+        </div>
+        <div class="footer-nav">
+            <ul>
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="Category.html">Categories</a></li>
+                  <li><a href="#customer-review">Customer Reviwe</a></li>
+		  <li><a href="about.html">About Us</a></li>
+		  <li><a href="#">Contact Us</a></li>
+	     </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@aabhushan.com</p>
+            <p>Phone: +91 12345 67890</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#"><img src="Ads/facebook.jpeg" alt="Facebook"></a>
+            <a href="#"><img src="Ads/insta.jpeg" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 आभूषण. All Rights Reserved.</p>
+    </div>
+  </footer>  
+
+
+
+
+
+   <script>
+        function show() {
+            document.getElementById('innerlist').classList.add('show-innerol');
+        }
+
+        function hide() {
+            document.getElementById('innerlist').classList.remove('show-innerol');
+        }
+
+
+                // JavaScript function to open a popup window with an iframe
+        function openPopup(url) {
+            // Define the URL to be loaded in the iframe
+            
+            
+            // Define the window features (size, scrollbars, etc.)
+            var features = "width=600,height=400,scrollbars=yes,resizable=yes";
+
+            // Open a new window
+            var popupWindow = window.open("", "popupWindow", features);
+
+           popupWindow.document.write('<!DOCTYPE html><html lang="en"><head><title>Popup Iframe</title></head><body>');
+            popupWindow.document.write('<iframe src="' + url + '" width="600" height="400" style="border:none;"></iframe>');
+            popupWindow.document.write('</body></html>');
+
+        }
+
+        document.querySelectorAll('.popupButton').forEach(button => {
+            button.addEventListener('click', function() {
+                var url = this.getAttribute('data-url');
+                openPopup(url);
+            });
+        });
+
+    </script>
+
+
+
+</body>
+</html>
